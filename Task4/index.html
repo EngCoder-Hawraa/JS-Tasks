@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task4</title>
+    <link rel="stylesheet" href="style/css/style.css">
+</head>
+
+<body>
+    <section class="form">
+        <div class="user-info">AGE CALCULATE</div>
+        <div class="mt-80">
+            <div><label for="name">Name</label></div>
+            <input type="text" id="name" class="user-name" placeholder="enter your name">
+        </div>
+        <div class="mt-20">
+            <div><label for="birth">Birth</label></div>
+            <input type="number" id="birth" class="date-birth" placeholder="enter your birth date">
+        </div>
+        <button type="submit" class="submit" onclick="agecalculate()">Calculate</button>
+    </section>
+    <section>
+        <div class="information">
+            <h2>SHOW MY INFORMATION</h2>
+            <br>
+            <span>Name: </span><span id="username"></span>
+            <br>
+            <span>Birth: </span><span id="datebirth"></span>
+            <br>
+            <span>Age: </span><span id="userage"></span>
+        </div>
+    </section>
+
+    <script src="style/js/script.js "></script>
+</body>
+
+</html>
