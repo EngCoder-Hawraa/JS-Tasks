@@ -76,6 +76,7 @@ label {
 }
 
 .information {
+    text-align: center;
     color: #fff;
     background: #4700D8;
     padding: 40px;
@@ -84,7 +85,32 @@ label {
     box-shadow: 0 15px 20px rgba(0, 0, 0, .3);
 }
 
+.outputs-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.outputs-wrapper div {
+    height: 100%;
+    width: 100%;
+    background-color: #080808;
+    border-radius: 5px;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    margin-left: 20px;
+    padding: 20px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, .3);
+}
+
 span {
     font-size: 30px;
     font-weight: 500;
+}
+
+p {
+    font-size: 14px;
+    color: #707070;
+    font-weight: 400;
 }
