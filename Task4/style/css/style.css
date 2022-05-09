@@ -109,7 +109,7 @@ span {
     font-weight: 500;
 }
 
-p {
+.outputs-wrapper p {
     font-size: 14px;
     color: #707070;
     font-weight: 400;
