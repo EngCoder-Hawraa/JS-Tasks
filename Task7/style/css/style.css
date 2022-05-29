@@ -1,0 +1,16 @@
+body {
+    margin: 80px;
+    background: rgb(82, 9, 241);
+    color: #fff;
+}
+
+h3 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.first_letter {
+    margin: 20px;
+    margin-top: 40px;
+    font-size: 20px;
+}
