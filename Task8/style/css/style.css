@@ -1,0 +1,19 @@
+body {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 40px;
+    text-align: center;
+}
+
+#demo {
+    height: 200px;
+    padding-top: 200px;
+    margin-top: 60px;
+    margin-left: 25%;
+    font-size: 60px;
+    width: 50%;
+    color: #fff;
+    background: #000;
+    box-shadow: -2px 3px #54645757;
+    border-radius: 10px;
+}
