@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Object Task1</title>
+    <title>Object Task3</title>
 
 
 <body>
@@ -16,7 +16,6 @@
 // object literals
 var car = {
     model: 'bmw',
-    color: 'red',
     price: 2000,
     type: 'gas'
 }
@@ -24,14 +23,14 @@ var car = {
 console.log(car.type); //gas 
 
 // function constructor
-function Car(model, color) {
+function Car(model, price) {
     this.model = model;
-    this.color = color;
+    this.price = price;
 }
 
-var c1 = new Car('BMW', 'red');
+var c1 = new Car('BMW', '2000');
 console.log(c1.model);
-console.log(c1.color);
+console.log(c1.price);
 
 // using the Object.create
 var ElectricCar = Object.create(Car, {
@@ -60,6 +59,20 @@ var car1 = new Cars("BMW", 100);
 car1.getInfo();
 var car2 = new Cars("Audi", 150);
 car2.getInfo();
+
+
+
+// Adding property to object
+
+// Dot syntax
+car.color = 'red';
+console.log(car);
+
+// Square Bracket Notation
+car['color'] = 'blue';
+console.log(car);
+
+
 </script>
 
 </body>
