@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Task1</title>
+
+
+<body>
+
+
+
+<script>
+// Task3
+// object literals
+var car = {
+    model: 'bmw',
+    color: 'red',
+    price: 2000,
+    type: 'gas'
+}
+
+console.log(car.type); //gas 
+
+// function constructor
+function Car(model, color) {
+    this.model = model;
+    this.color = color;
+}
+
+var c1 = new Car('BMW', 'red');
+console.log(c1.model);
+console.log(c1.color);
+
+// using the Object.create
+var ElectricCar = Object.create(Car, {
+    type: {
+        value: 'Electric',
+        writable: true,
+        configurable: false,
+        enumerable: true
+    }
+});
+console.log(ElectricCar.type); // Electric
+
+// using the class keyword (which is almost the same as using a function constructor)
+class Cars {
+
+constructor(maker, price) {
+    this.maker = maker;
+    this.price = price;
+}
+
+getInfo() {
+    console.log(this.maker + " costs : " + this.price);
+}
+}
+var car1 = new Cars("BMW", 100);
+car1.getInfo();
+var car2 = new Cars("Audi", 150);
+car2.getInfo();
+</script>
+
+</body>
+</html>
