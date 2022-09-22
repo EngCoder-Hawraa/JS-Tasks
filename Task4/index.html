@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Task3</title>
+
+
+<body>
+    <div>
+        <p id="article" class="article">HHHHH</p>
+        <div class="di1" id="div1">
+        <span> A</span>
+    </div>
+    
+
+<script>
+//1- Find an element by element id
+const article = document.getElementById("article");
+console.log(article);
+const div1=document.getElementById("div1");
+console.log(div1);
+
+//2- Find elements by tag name	
+const p = document.getElementsByTagName("p");
+console.log(p);
+
+const div = document.getElementsByTagName("div");
+console.log(div);
+
+const span = document.getElementsByTagName("span");
+console.log(span);
+
+
+//3- Find elements by class name	
+const articles = document.getElementsByClassName("article");
+console.log(articles);
+
+const di1 = document.getElementsByClassName("di1");
+console.log(di1);
+
+//4- Finding HTML Elements by CSS Selectors
+// querySelector
+const selector1 = document.querySelector("p#article"); 
+console.log(selector1);
+
+const selector2 = document.querySelector("div.di1"); 
+console.log(selector2);
+
+const selector3 = document.querySelector("span"); 
+console.log(selector3);
+//querySelectorAll
+const selector4 = document.querySelectorAll("div.di1"); 
+console.log(selector4);
+
+const selector5 = document.querySelectorAll("div#div1"); 
+console.log(selector5);
+
+const selector6 = document.querySelectorAll("p.article"); 
+console.log(selector6);
+
+//5- Finding HTML Elements by HTML Object Collections
+
+for (let node of document.body.childNodes) {
+  console.log(node); // shows all nodes from the collection
+}
+
+</script>
+
+</body>
+</html>
