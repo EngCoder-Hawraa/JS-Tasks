@@ -5,50 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Object Task7</title>
+    <title>Task7</title>
 
 
 <body>
 
-    <h2 style="text-align:center">المنتجات</h2>
-    <button>الاجهزة الطبية</button>
-    <button>الاجهزة الالكترونية</button>
-   <div style="display:flex;justify-content:center;align-items:center">
-    <div class="card">
-        <img src="images/Capture.PNG" alt="Denim Jeans" style="width:100%">
-        <h1>جهاز طبي</h1>
-        <p class="price">$19.99</p>
-        <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-        <p><button>Add to Cart</button></p>
+    <div class="wrapper">
+      <h3>المنتجات</h3>
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">الكل</button>
+        <button class="button-value" onclick="filterProduct('Medical')">الاجهزة الطبية</button>
+        <button class="button-value" onclick="filterProduct('Electronic')">الاجهزة الالكترونية</button>
+        <button class="button-value" onclick="filterProduct('Clothes')">الملابس</button>
+        <button class="button-value" onclick="filterProduct('Shoes')">الأحذية</button>
       </div>
-      <div class="card">
-        <img src="images/Capture.PNG" alt="Denim Jeans" style="width:100%">
-        <h1>جهاز طبي</h1>
-        <p class="price">$19.99</p>
-        <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-        <p><button>Add to Cart</button></p>
-      </div>
-      <div class="card">
-        <img src="images/Capture.PNG" alt="Denim Jeans" style="width:100%">
-        <h1>جهاز طبي</h1>
-        <p class="price">$19.99</p>
-        <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-        <p><button>Add to Cart</button></p>
-      </div>
-      <div class="card">
-        <img src="images/Capture.PNG" alt="Denim Jeans" style="width:100%">
-        <h1>جهاز طبي</h1>
-        <p class="price">$19.99</p>
-        <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-        <p><button>Add to Cart</button></p>
-      </div>
-   </div>
-       
+      <div id="products"></div>
+    </div>
 
-<script>
-
-
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
