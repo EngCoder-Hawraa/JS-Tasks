@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  background: linear-gradient(to bottom, #f1f4f9, #dff1ff);
+  /* height: 1000px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+:root {
+  --box-shadow: 0px 15px 20px 0px rgb(0, 0, 0, .2);
+  --white-color: #fff
+}
+.container {
+  width: 500px;
+  height: 100px;
+  background-color: #4700D8;
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  border-left: 5px solid var(--white-color);
+  border-right: 5px solid var(--white-color);
+  border-radius: 15px;
+  box-shadow: var(--box-shadow);
+  transform: translate(calc(100% + 40px));
+  transition: all .5s cubic-bezier(.68, -.55, .265, 1.55);
+  overflow: hidden;
+}
+
+.container:hover {
+  opacity: 90%;
+  transform: scale(.95);
+}
+
+.container.active {
+  transform: translateX(0%);
+}
+
+.alert {
+  align-items: center;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.alert .check {
+  height: 35px;
+  width: 35px;
+  background-color: green;
+  border-radius: 50%;
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.alert_value {
+  flex-direction: column;
+  margin: 0 20px;
+  color: white;
+}
+
+
+
+.container .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: var(--white-color);
+  padding: 5px;
+  cursor: pointer;
+  opacity: .7;
+}
+
+.container .close:hover {
+  opacity: 1;
+}
+
+.container .progress {
+  height: 3px;
+  width: 100%;
+  background-color: var(--white-color);
+  box-shadow: var(--box-shadow);
+  position: absolute;
+  bottom: 0px;
+  left: 0px
+}
+
+.container .progress::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  right: 20px
+}
+
+.progress.active::before {
+  animation: as 6s linear forwards;
+}
+
+@keyframes as {
+  100% {
+      right: 100%;
+  }
+  50% {
+      right: 50%;
+  }
+}
+
+
+.d-flex {
+  display: flex;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-10 {
+  margin-top: 80px;
+}
+
+.form {
+  background-color: #fff;
+  padding: 40px;
+  margin: 140px 40px;
+  border-radius: 27px;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, .3);
+}
+
+.value-info {
+  text-align: center;
+  color: #4700D8;
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.input-value {
+  width: 350px;
+  height: 40px;
+  padding-left: 20px;
+  border: 1px solid #4700D8;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+label {
+  padding-left: 10px;
+  color: #4700D8;
+  font-weight: bolder
+}
+
+.info {
+  padding-top: 20px;
+}
+
+
+.submit {
+  width: 360px;
+  height: 55px;
+  border: 0;
+  background-color: #4700D8;
+  margin-top: 40px;
+  border-radius: 10px;
+  color: white;
+  font-size: 17px;
+}
+
+
+
+
